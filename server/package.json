@@ -4,8 +4,8 @@
   "description": "Book-store-online data will be stored in the database",
   "main": "server.js",
   "scripts": {
-    "build": "npm i",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "npm install"
   },
   "author": "Aman",
   "license": "MIT",
