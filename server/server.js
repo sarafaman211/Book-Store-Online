@@ -21,9 +21,6 @@ app.use('/api/products', require('./routes/products'));
 app.use('/api/items', require('./routes/items'));
 app.use('/api/contact', require('./routes/contact'));
 
-if(process.env.NODE_ENV === "production"){
-    app.use(express.static("client/build"))
-}
 
 app.listen(PORT, () => {
     console.log(`Express connection established in port ${ PORT } and it is on ${ process.env.NODE_ENV } mode`.yellow.underline)
